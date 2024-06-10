@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <title>Quiz App - Easy Tutorials</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="app">
-  <h1>Simple Quiz</h1>
-  <div class="quiz">
-    <h2 id="question">Question goes here</h2>
-    <div id="answer-buttons">
-      <button class="btn">Answer 1</button>
-      <button class="btn">Answer 2</button>
-      <button class="btn">Answer 3</button>
-      <button class="btn">Answer 4</button>
+  <div id="start-page">
+    <div class="logo-container">
+      <img id="logo" src="logo.jpg">
     </div>
-    <button id="next-btn">Next</button>
+    <button id="start-btn" class="btn start-btn">Start Quiz</button>
+  </div>
+  <div id="quiz-page" style="display: none;">
+    <h1>Simple Quiz</h1>
+    <div class="quiz">
+      <h2 id="question">Question goes here</h2>
+      <div id="answer-buttons">
+        <!-- Answers will be dynamically added here -->
+      </div>
+      <button id="next-btn" class="btn">Next</button>
+    </div>
   </div>
 </div>
-</div>
-<script src="script.js"><</script>
-</body> 
+<script src="script.js"></script>
+</body>
 </html>
